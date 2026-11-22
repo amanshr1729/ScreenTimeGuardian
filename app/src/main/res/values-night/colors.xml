@@ -11,6 +11,11 @@
     <color name="text_muted">#94A3B8</color>
     <color name="accent_amber">#FBBF24</color>
     <color name="accent_amber_bg">#451A03</color>
+    <color name="accent_red">#F87171</color>
+    <color name="accent_red_bg">#450A0A</color>
     <color name="progress_track">#1E293B</color>
     <color name="launcher_bg">#0F766E</color>
+    <color name="cooldown_bg">#041522</color>
+    <color name="cooldown_text">#F0F9FF</color>
+    <color name="cooldown_muted">#7DD3FC</color>
 </resources>

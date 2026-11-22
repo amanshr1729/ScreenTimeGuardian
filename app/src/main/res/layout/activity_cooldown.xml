@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cooldown_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cooldown_title"
+        android:textColor="@color/cooldown_text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/cooldown_subtitle"
+        android:textColor="@color/cooldown_muted"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvBreathPhase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Breathe in slowly..."
+        android:textColor="@color/primary_teal_container"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCooldownSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFeatureSettings="tnum"
+        android:text="60s"
+        android:textColor="@color/cooldown_text"
+        android:textSize="64sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressCooldown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:max="60"
+        android:progress="0"
+        app:indicatorColor="@color/primary_teal_container"
+        app:trackColor="#1E3A5F"
+        app:trackCornerRadius="6dp"
+        app:trackThickness="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExitCooldown"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/btn_finish_early"
+        android:textAllCaps="false"
+        android:textColor="@color/cooldown_text"
+        app:cornerRadius="14dp"
+        app:strokeColor="@color/cooldown_muted" />
+
+</LinearLayout>

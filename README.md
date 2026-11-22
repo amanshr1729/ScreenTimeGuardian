@@ -1,35 +1,18 @@
-# ScreenTime Guardian (v1.0 — Lightweight Native Kotlin)
+# ScreenTime Guardian (v2.0 — Native Kotlin)
 
-A minimal, battery-friendly Android app that tracks active screen-on time and gently nudges you to take a break after your custom **X hours, Y minutes** limit.
+A lightweight, battery-friendly Android app designed for mindful phone use on Samsung One UI and Android 8–15.
 
-## Included in Version 1
-- **Custom timer**: Set any hours & minutes (plus 30m, 1h, 1h 30m, 2h 30m presets).
-- **Persistent screen-on tracking**: Runs via a lightweight Foreground Service (`ACTION_SCREEN_ON` / `ACTION_SCREEN_OFF`)—automatically pauses when your screen is off, and auto-logs a natural break if your screen stays off for 3+ minutes.
-- **Toast + Smart Heads-Up Notification**: Fires a heads-up notification with one-tap **Took a break**, **Snooze 5m**, and **Snooze 15m** actions, plus an optional **Toast** pop-up.
-- **Gentle escalation**: Re-reminds every 10 minutes if ignored (up to 3 nudges).
-- **Discipline Streak & Daily Stats**: Tracks how consistently you respond to break reminders, your best streak, today's breaks, and today's total screen time.
-- **Samsung One UI friendly**: Includes a built-in prompt to set Battery usage to **Unrestricted** so Samsung's Deep Sleeping Apps won't kill the timer, plus automatic restart after reboot.
+## Features in v2.0
+- **Daily Overall Screen-Time Threshold Alert**: Set an overall daily cap (default 4h) and repeat interval (default every 10m). Once crossed, a high-priority heads-up notification flashes every *X* minutes while the screen is on, with one-tap **60s Cooldown** or **Pause today** actions.
+- **Session Break Timer + Toast & Smart Notification**: Custom *X* hours *Y* minutes countdown that pauses when the screen turns off, auto-logs natural 3+ minute breaks, and offers **Took a break**, **Snooze 5m**, and **Snooze 15m** actions plus optional Toast pop-ups and Gentle Escalation.
+- **Unlock / Pick-Up Counter**: Counts daily phone unlocks automatically.
+- **Bedtime Wind-Down Rule**: Switches to a shorter reminder interval during night hours (default 22:00–07:00, every 15m).
+- **Focus Mode (Auto DND)**: One-tap 25m / 50m / 90m focus sprints that enable Do Not Disturb and restore your previous notification filter when finished.
+- **Per-App Doomscroll Guard**: Optional Usage Access monitor for Instagram, YouTube, TikTok, X, Reddit, Facebook, and Snapchat that nudges you if you linger past your continuous app limit.
+- **60-Second Cooldown Screen**: Guided breathing countdown (Inhale / Hold / Exhale) that logs a break and grows your Discipline Streak on completion.
+- **7-Day History & Discipline Streak**: Lightweight local log of the past 7 days of screen time, breaks, and unlocks.
 
----
-
-## How to Build Your `.apk`
-
-### Option 1: Fastest — Auto-Build `.apk` on GitHub (No Android Studio needed)
-1. Unzip `ScreenTimeGuardian-Android.zip`.
-2. Create a new (private or public) repository on [GitHub](https://github.com/new).
-3. Upload all files from the `ScreenTimeGuardian` folder (making sure `.github/workflows/build-apk.yml` is included).
-4. Open the **Actions** tab → click **Build ScreenTime Guardian APK** (or click **Run workflow**).
-5. When the build finishes (~2 minutes), download **`ScreenTimeGuardian-debug-apk`** from the **Artifacts** section, transfer `app-debug.apk` to your Samsung phone, and tap it to install.
-
-### Option 2: Build Locally in Android Studio
-1. Open the unzipped `ScreenTimeGuardian` folder in **Android Studio** (Ladybug or newer, JDK 17).
-2. Let Gradle sync finish.
-3. Click **Build → Build Bundle(s) / APK(s) → Build APK(s)**.
-4. Grab the generated APK from `app/build/outputs/apk/debug/app-debug.apk`.
-
----
-
-## Samsung Setup Tip
-After installing on your Samsung phone:
-1. Open **ScreenTime Guardian** and tap **Start timer** (allow Notifications when prompted).
-2. Tap the amber **Keep timer reliable on Samsung** banner at the top of the app and allow **Unrestricted** battery usage.
+## Build Your `.apk` on GitHub Actions
+1. Replace the files in your GitHub repository with the contents of `ScreenTimeGuardian`.
+2. Push to `main` (or trigger **Build ScreenTime Guardian APK** in the **Actions** tab).
+3. Download **`ScreenTimeGuardian-v2-debug-apk`** from the completed workflow's **Artifacts** section and install `app-debug.apk` on your Samsung phone.

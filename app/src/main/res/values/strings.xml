@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ScreenTime Guardian</string>
-    <string name="subtitle_tagline">Gentle break reminders for mindful phone use</string>
+    <string name="subtitle_tagline">Mindful phone limits, focus sprints, and break reminders</string>
     <string name="label_next_break">NEXT SCREEN BREAK</string>
-    <string name="label_reminder_interval">Reminder interval</string>
+    <string name="label_reminder_interval">Active interval</string>
     <string name="label_todays_breaks">Today\'s breaks</string>
+    <string name="label_todays_unlocks">Unlocks</string>
     <string name="label_discipline_streak">Discipline Streak</string>
     <string name="btn_start_timer">Start timer</string>
     <string name="btn_pause_timer">Pause timer</string>
     <string name="btn_reset">Reset</string>
     <string name="btn_took_break">I took a break</string>
-    <string name="label_custom_interval">Custom Reminder Interval</string>
+    <string name="btn_start_cooldown">60s Cooldown</string>
+    <string name="label_custom_interval">Session Break Interval</string>
     <string name="label_hours">Hours</string>
     <string name="label_minutes">Minutes</string>
     <string name="btn_apply_interval">Apply interval</string>
@@ -24,8 +26,43 @@
     <string name="status_paused">Paused</string>
     <string name="status_break_due">Break due</string>
     <string name="status_snoozed">Snoozed</string>
+    <string name="status_focus">Focus</string>
+    <string name="status_limit_over">Over limit</string>
+
+    <string name="label_daily_threshold">Daily Overall Threshold Alert</string>
+    <string name="desc_daily_threshold">Flash a high-priority notification every X minutes once total daily screen time exceeds your cap</string>
+    <string name="label_repeat_mins">Repeat every (min)</string>
+    <string name="btn_save_daily_threshold">Save daily threshold</string>
+
+    <string name="label_focus_mode">Focus Mode (Auto DND)</string>
+    <string name="desc_focus_mode">Silence non-essential notifications during a deep-work sprint</string>
+    <string name="btn_start_focus">Start focus</string>
+    <string name="btn_stop_focus">End focus</string>
+
+    <string name="label_bedtime_rule">Bedtime Wind-Down Rule</string>
+    <string name="desc_bedtime_rule">Use a shorter reminder interval at night to stop late scrolling</string>
+    <string name="label_bedtime_start">Start hour (0-23)</string>
+    <string name="label_bedtime_end">End hour (0-23)</string>
+    <string name="label_bedtime_mins">Night interval (min)</string>
+    <string name="btn_save_bedtime">Save bedtime rule</string>
+
+    <string name="label_doomscroll_guard">Per-App Doomscroll Guard</string>
+    <string name="desc_doomscroll_guard">Nudge when you linger too long in Instagram, YouTube, X, TikTok, or Reddit</string>
+    <string name="label_app_limit_mins">Continuous app limit (min)</string>
+    <string name="btn_save_doomscroll">Save app guard</string>
+    <string name="btn_grant_usage">Grant Usage Access</string>
+
+    <string name="label_weekly_history">7-Day History</string>
+    <string name="empty_history">Your daily totals will appear here as each day wraps up.</string>
+
+    <string name="cooldown_title">Take a 60-Second Breather</string>
+    <string name="cooldown_subtitle">Step back from the screen. Completing this logs your break and grows your streak.</string>
+    <string name="btn_finish_early">Return to app</string>
+
     <string name="channel_ongoing_name">Screen Time Monitor</string>
     <string name="channel_ongoing_desc">Keeps your screen time countdown accurate in the background</string>
     <string name="channel_alert_name">Screen Break Reminders</string>
-    <string name="channel_alert_desc">Heads-up reminders when you reach your screen time limit</string>
+    <string name="channel_alert_desc">Heads-up reminders when you reach your session or app limit</string>
+    <string name="channel_daily_limit_name">Daily Screen Limit Alerts</string>
+    <string name="channel_daily_limit_desc">High-priority repeating alerts after crossing your overall daily screen time limit</string>
 </resources>
