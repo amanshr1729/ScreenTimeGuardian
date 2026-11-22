@@ -4,7 +4,7 @@
     <string name="subtitle_tagline">Gentle break reminders for mindful phone use</string>
     <string name="label_next_break">NEXT SCREEN BREAK</string>
     <string name="label_reminder_interval">Reminder interval</string>
-    <string name="label_todays_breaks">Today's breaks</string>
+    <string name="label_todays_breaks">Today\'s breaks</string>
     <string name="label_discipline_streak">Discipline Streak</string>
     <string name="btn_start_timer">Start timer</string>
     <string name="btn_pause_timer">Pause timer</string>
@@ -19,7 +19,7 @@
     <string name="label_escalation_toggle">Gentle escalation</string>
     <string name="desc_escalation_toggle">Remind again every 10 minutes if ignored</string>
     <string name="banner_battery_title">Keep timer reliable on Samsung</string>
-    <string name="banner_battery_desc">Tap to set Battery to Unrestricted so One UI doesn't pause the timer.</string>
+    <string name="banner_battery_desc">Tap to set Battery to Unrestricted so One UI doesn\'t pause the timer.</string>
     <string name="status_monitoring">Active</string>
     <string name="status_paused">Paused</string>
     <string name="status_break_due">Break due</string>
